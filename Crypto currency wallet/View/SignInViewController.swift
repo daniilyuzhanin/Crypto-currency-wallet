@@ -55,6 +55,7 @@ final class SignInViewController: BaseViewController {
         
         self.navigationItem.leftBarButtonItem = nil
         self.navigationItem.hidesBackButton = true
+        self.navigationController?.navigationBar.scrollEdgeAppearance = nil
         
     }
     
@@ -119,7 +120,7 @@ final class SignInViewController: BaseViewController {
     
     private func goToHomePage(flag: Bool) {
         guard flag else { return }
-        let vc = HomeViewController()
+        let vc = Builder.buildHome()
         DispatchQueue.main.async {
             self.navigationController?.pushViewController(vc, animated: true)
         }

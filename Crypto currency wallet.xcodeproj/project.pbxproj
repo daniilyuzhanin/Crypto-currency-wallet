@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6D5603128F82387004B1A4C /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D5603028F82386004B1A4C /* CryptoModel.swift */; };
+		E6D5603328F82703004B1A4C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D5603228F82703004B1A4C /* HomeViewModel.swift */; };
+		E6D5603528F82728004B1A4C /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D5603428F82728004B1A4C /* HomeProtocol.swift */; };
+		E6D5603728FED8C9004B1A4C /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D5603628FED8C9004B1A4C /* CoinViewController.swift */; };
+		E6D5603929015027004B1A4C /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D5603829015026004B1A4C /* SpinnerViewController.swift */; };
+		E6D5603B2901798A004B1A4C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D5603A2901798A004B1A4C /* HomeTableViewCell.swift */; };
 		E6F6625428EB20680026A5A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6625328EB20680026A5A6 /* AppDelegate.swift */; };
 		E6F6625828EB20680026A5A6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6625728EB20680026A5A6 /* BaseViewController.swift */; };
 		E6F6625D28EB206B0026A5A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6F6625C28EB206B0026A5A6 /* Assets.xcassets */; };
 		E6F6626028EB206B0026A5A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F6625E28EB206B0026A5A6 /* LaunchScreen.storyboard */; };
 		E6F662D528F43E1F0026A5A6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F662D428F43E1F0026A5A6 /* Network.swift */; };
 		E6F662D728F4405B0026A5A6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F662D628F4405B0026A5A6 /* SignInViewController.swift */; };
-		E6F662D928F445980026A5A6 /* SignInBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F662D828F445980026A5A6 /* SignInBuilder.swift */; };
+		E6F662D928F445980026A5A6 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F662D828F445980026A5A6 /* Builder.swift */; };
 		E6F662DB28F447460026A5A6 /* SignInProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F662DA28F447460026A5A6 /* SignInProtocol.swift */; };
 		E6F662DD28F447F30026A5A6 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F662DC28F447F30026A5A6 /* SignInViewModel.swift */; };
 		E6F662DF28F48C8B0026A5A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F662DE28F48C8A0026A5A6 /* HomeViewController.swift */; };
@@ -22,6 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E6D5603028F82386004B1A4C /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
+		E6D5603228F82703004B1A4C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E6D5603428F82728004B1A4C /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		E6D5603628FED8C9004B1A4C /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
+		E6D5603829015026004B1A4C /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		E6D5603A2901798A004B1A4C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		E6F6625028EB20680026A5A6 /* Crypto currency wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto currency wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F6625328EB20680026A5A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6F6625728EB20680026A5A6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -30,7 +42,7 @@
 		E6F6626128EB206B0026A5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6F662D428F43E1F0026A5A6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		E6F662D628F4405B0026A5A6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		E6F662D828F445980026A5A6 /* SignInBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInBuilder.swift; sourceTree = "<group>"; };
+		E6F662D828F445980026A5A6 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		E6F662DA28F447460026A5A6 /* SignInProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocol.swift; sourceTree = "<group>"; };
 		E6F662DC28F447F30026A5A6 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		E6F662DE28F48C8A0026A5A6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -49,17 +61,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E6D5602E28F723A5004B1A4C /* SignIn */ = {
-			isa = PBXGroup;
-			children = (
-				E6F662DC28F447F30026A5A6 /* SignInViewModel.swift */,
-				E6F662D628F4405B0026A5A6 /* SignInViewController.swift */,
-				E6F662DA28F447460026A5A6 /* SignInProtocol.swift */,
-				E6F662D828F445980026A5A6 /* SignInBuilder.swift */,
-			);
-			path = SignIn;
-			sourceTree = "<group>";
-		};
 		E6F6624728EB20680026A5A6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +82,8 @@
 			children = (
 				E6F6625328EB20680026A5A6 /* AppDelegate.swift */,
 				E6F6625728EB20680026A5A6 /* BaseViewController.swift */,
+				E6F662D828F445980026A5A6 /* Builder.swift */,
+				E6D5603829015026004B1A4C /* SpinnerViewController.swift */,
 				E6F6625C28EB206B0026A5A6 /* Assets.xcassets */,
 				E6F6625E28EB206B0026A5A6 /* LaunchScreen.storyboard */,
 				E6F6626128EB206B0026A5A6 /* Info.plist */,
@@ -96,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				E6F662E228F585A70026A5A6 /* UserModel.swift */,
+				E6D5603028F82386004B1A4C /* CryptoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,7 +107,10 @@
 		E6F6626828EB241D0026A5A6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				E6D5602E28F723A5004B1A4C /* SignIn */,
+				E6F662DC28F447F30026A5A6 /* SignInViewModel.swift */,
+				E6F662DA28F447460026A5A6 /* SignInProtocol.swift */,
+				E6D5603228F82703004B1A4C /* HomeViewModel.swift */,
+				E6D5603428F82728004B1A4C /* HomeProtocol.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -111,7 +118,10 @@
 		E6F6626928EB242D0026A5A6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E6F662D628F4405B0026A5A6 /* SignInViewController.swift */,
 				E6F662DE28F48C8A0026A5A6 /* HomeViewController.swift */,
+				E6D5603A2901798A004B1A4C /* HomeTableViewCell.swift */,
+				E6D5603628FED8C9004B1A4C /* CoinViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,12 +209,18 @@
 				E6F662DD28F447F30026A5A6 /* SignInViewModel.swift in Sources */,
 				E6F662DB28F447460026A5A6 /* SignInProtocol.swift in Sources */,
 				E6F662DF28F48C8B0026A5A6 /* HomeViewController.swift in Sources */,
+				E6D5603929015027004B1A4C /* SpinnerViewController.swift in Sources */,
 				E6F662E128F583E80026A5A6 /* UserSettings.swift in Sources */,
 				E6F6625828EB20680026A5A6 /* BaseViewController.swift in Sources */,
+				E6D5603128F82387004B1A4C /* CryptoModel.swift in Sources */,
+				E6D5603328F82703004B1A4C /* HomeViewModel.swift in Sources */,
 				E6F6625428EB20680026A5A6 /* AppDelegate.swift in Sources */,
+				E6D5603528F82728004B1A4C /* HomeProtocol.swift in Sources */,
 				E6F662D528F43E1F0026A5A6 /* Network.swift in Sources */,
+				E6D5603728FED8C9004B1A4C /* CoinViewController.swift in Sources */,
 				E6F662E328F585A70026A5A6 /* UserModel.swift in Sources */,
-				E6F662D928F445980026A5A6 /* SignInBuilder.swift in Sources */,
+				E6D5603B2901798A004B1A4C /* HomeTableViewCell.swift in Sources */,
+				E6F662D928F445980026A5A6 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

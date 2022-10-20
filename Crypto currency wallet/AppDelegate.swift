@@ -11,18 +11,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var spinner: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        
+
+        spinner = UIWindow(frame: UIScreen.main.bounds)
+        spinner?.rootViewController = SpinnerViewController()
         window = UIWindow(frame: UIScreen.main.bounds)
-        
-        if UserSettings.userName != nil {
-            self.window?.rootViewController = UINavigationController(rootViewController: HomeViewController())
-        } else {
-            self.window?.rootViewController = UINavigationController(rootViewController: SignInBuilder.build())
-        }
-//        window?.rootViewController = Builder.build()
+
+        self.window?.rootViewController = UserSettings.userName != nil ? UINavigationController(rootViewController: Builder.buildHome()) : UINavigationController(rootViewController: Builder.buildSignIn())
         window?.makeKeyAndVisible()
         
         return true
