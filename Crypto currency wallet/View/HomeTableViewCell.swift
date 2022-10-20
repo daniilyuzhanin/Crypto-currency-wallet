@@ -14,21 +14,21 @@ class HomeTableViewCell: UITableViewCell {
     private let nameLabel: UILabel = {
         let nameLabel = UILabel()
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
-        nameLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        nameLabel.font = UIFont.systemFont(ofSize: 22, weight: .bold)
         return nameLabel
     }()
     
     private let priceLabel: UILabel = {
         let priceLabel = UILabel()
         priceLabel.translatesAutoresizingMaskIntoConstraints = false
-        priceLabel.font = UIFont.systemFont(ofSize: 20, weight: .medium)
+        priceLabel.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         return priceLabel
     }()
     
     private let changePriceLabel: UILabel = {
         let changePriceLabel = UILabel()
         changePriceLabel.translatesAutoresizingMaskIntoConstraints = false
-        changePriceLabel.font = UIFont.systemFont(ofSize: 16, weight: .light)
+        changePriceLabel.font = UIFont.systemFont(ofSize: 14, weight: .light)
         return changePriceLabel
     }()
     
@@ -66,9 +66,9 @@ class HomeTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        nameLabel.frame = CGRect(x: 20, y: 35, width: 100, height: 40)
-        priceLabel.frame = CGRect(x: 120, y: 37, width: contentView.frame.size.width - 100, height: 20)
-        changePriceLabel.frame = CGRect(x: 120, y: 57, width: contentView.frame.size.width - 100, height: 20)
+        nameLabel.frame = CGRect(x: 20, y: 35, width: 80, height: 40)
+        priceLabel.frame = CGRect(x: 100, y: 37, width: contentView.frame.size.width - 80, height: 20)
+        changePriceLabel.frame = CGRect(x: 100, y: 57, width: contentView.frame.size.width - 80, height: 20)
     }
 
 }

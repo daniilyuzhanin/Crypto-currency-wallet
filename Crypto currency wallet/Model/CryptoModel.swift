@@ -20,7 +20,7 @@ struct CryptoModelData: Codable {
 }
 
 struct CryptoModelMarket: Codable {
-    var price_usd: Double
-    var percent_change_usd_last_24_hours: Double
+    var price_usd: Double?
+    var percent_change_usd_last_24_hours: Double?
 }
 

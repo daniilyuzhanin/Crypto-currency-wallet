@@ -12,5 +12,5 @@ protocol HomeProtocolIn {
 }
 
 protocol HomeProtocolOut {
-    var setText: (CryptoModel) -> Void { get set }
+    var setData: (CryptoModel) -> Void { get set }
 }

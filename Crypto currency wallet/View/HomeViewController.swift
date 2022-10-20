@@ -26,7 +26,7 @@ class HomeViewController: BaseViewController  {
         VM?.getData()
         guard var VM = VM else { return }
         
-        VM.setText = { [weak self] result in
+        VM.setData = { [weak self] result in
 
             self?.arr.append(result)
             
@@ -68,11 +68,12 @@ class HomeViewController: BaseViewController  {
     
     @objc
     private func sortButton() {
+
         if flag {
-            arr.sort { $0.data.market_data.price_usd < $1.data.market_data.price_usd }
+            arr.sort { $0.data.market_data.price_usd ?? 0 < $1.data.market_data.price_usd ?? 0 }
             flag = false
         } else {
-            arr.sort { $0.data.market_data.price_usd > $1.data.market_data.price_usd }
+            arr.sort { $0.data.market_data.price_usd ?? 0 > $1.data.market_data.price_usd ?? 0 }
             flag = true
         }
         tableView.reloadData()
@@ -94,8 +95,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.configure(
             name: arr[indexPath.row].data.symbol ?? "",
-            price: String(arr[indexPath.row].data.market_data.price_usd),
-            changePrice: String(arr[indexPath.row].data.market_data.percent_change_usd_last_24_hours))
+            price: "\(arr[indexPath.row].data.market_data.price_usd ?? 0)$",
+            changePrice: "\(arr[indexPath.row].data.market_data.percent_change_usd_last_24_hours ?? 0)$")
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

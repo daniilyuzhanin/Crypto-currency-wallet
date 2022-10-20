@@ -22,7 +22,6 @@ final class UserSettings {
             let defaults = UserDefaults.standard
             let key = SettingsKeys.userName.rawValue
             if let name = newValue {
-                print("value: \(name) was added \(key)")
                 defaults.set(name, forKey: key)
             } else {
                 defaults.removeObject(forKey: key)

@@ -28,13 +28,13 @@ final class Network {
             "btc",
             "eth",
             "tron",
-            "luna",
             "polkadot",
             "dogecoin",
             "tether",
             "stellar",
             "cardano",
-            "xrp"
+            "xrp",
+            "luna"
         ]
         
         let group = DispatchGroup()

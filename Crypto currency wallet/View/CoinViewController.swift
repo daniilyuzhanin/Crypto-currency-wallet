@@ -61,10 +61,7 @@ class CoinViewController: BaseViewController {
     override func layoutVC() {
         
         guard let cryptoName = cryptoData?.name,
-              let cryptoPrice = cryptoData?.market_data.price_usd,
-              let cryptoSymbol = cryptoData?.symbol,
-              let cryptoPriceChange = cryptoData?.market_data.percent_change_usd_last_24_hours
-        else { return }
+              let cryptoSymbol = cryptoData?.symbol else { return }
         
         view.addSubview(label)
         label.text = cryptoName
@@ -77,11 +74,16 @@ class CoinViewController: BaseViewController {
         symbol.text = cryptoSymbol
         NSLayoutConstraint.activate([
                     symbol.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                    symbol.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 20),
+                    symbol.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 23),
                ])
         
+        guard
+              let cryptoPrice = cryptoData?.market_data.price_usd,
+              let cryptoPriceChange = cryptoData?.market_data.percent_change_usd_last_24_hours
+        else { return }
+        
         view.addSubview(priceLabel)
-        priceLabel.text = "\(cryptoPrice) USD"
+        priceLabel.text = "\(cryptoPrice ) USD"
         NSLayoutConstraint.activate([
             priceLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             priceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 50),

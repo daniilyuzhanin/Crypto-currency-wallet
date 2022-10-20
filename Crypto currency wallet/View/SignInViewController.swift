@@ -96,7 +96,7 @@ final class SignInViewController: BaseViewController {
         view.addSubview(password)
         NSLayoutConstraint.activate([
             password.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            password.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 5),
+            password.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 10),
             password.widthAnchor.constraint(equalToConstant: 300),
             password.heightAnchor.constraint(equalToConstant: 50)
         ])
@@ -104,7 +104,7 @@ final class SignInViewController: BaseViewController {
         view.addSubview(button)
         NSLayoutConstraint.activate([
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 60),
+            button.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 70),
             button.widthAnchor.constraint(equalToConstant: 300),
             button.heightAnchor.constraint(equalToConstant: 50)
         ])
